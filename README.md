@@ -26,6 +26,8 @@ description: 包含9道小题
 去掉最高最低后共10个数,和为953,平均值为95.30
 {% endhint %}
 
+#### 参考代码
+
 {% code-tabs %}
 {% code-tabs-item title="example1.c" %}
 ```c
