@@ -102,6 +102,75 @@ int main()
 #### 参考代码
 
 ```c
+#include <stdio.h>
+int main()
+{
+    int arr1_size, arr2_size, i = 0, j = 0;
+    int arr1[20], arr2[20], arr_rlt[40];
 
+    void sort(int *array, int SizeOfArray); //数组排序函数声明
+
+    scanf("%d", &arr1_size); //读入数组1
+    for (i = 0; i < arr1_size; i++)
+    {
+        scanf("%d", (arr1 + i));
+    }
+
+    scanf("%d", &arr2_size); //读入数组2
+    for (i = 0; i < arr2_size; i++)
+    {
+        scanf("%d", (arr2 + i));
+    }
+
+    for (i = 0; i < arr1_size; i++) //如果找到一个元素在第一个数组和第二个数组里都出现了,那就把它标记为-1
+    {
+        for (j = 0; j < arr2_size; j++)
+        {
+            if (arr1[i] == arr2[j])
+            {
+                arr1[i] = -1;
+                arr2[j] = -1;
+            }
+        }
+    }
+
+    for (i = 0; i < arr1_size; i++) //将两个数组合并
+    {
+        arr_rlt[i] = arr1[i];
+    }
+    for (i = 0; i < arr2_size; i++)
+    {
+        arr_rlt[i + arr1_size] = arr2[i];
+    }
+
+    sort(arr_rlt, arr1_size + arr2_size); //调用排序函数
+
+    for (i = 0; i < arr1_size + arr2_size; i++)
+    {
+        if (arr_rlt[i] != -1)//如果这个元素被标记为-1,那么就跳过它,不打印
+        {
+            printf("%d ", arr_rlt[i]);
+        }
+    }
+
+    return 0;
+}
+
+//冒泡排序 函数第一个参数是要排序的数组 第二个参数是数组长度
+void sort(int *array, int SizeOfArray)
+{
+    int i_, j_;
+    int v;
+    for (i_ = 0; i_ < SizeOfArray - 1; i_++)
+        for (j_ = i_ + 1; j_ < SizeOfArray; j_++)
+        {
+            if (array[i_] > array[j_])
+            {
+                v = array[i_];
+                array[i_] = array[j_];
+                array[j_] = v;
+            }
+        }
+}
 ```
 
