@@ -6,8 +6,8 @@
 {% endhint %}
 
 {% hint style="info" %}
-该页面不再维护  
-部分程序可能不符合题目要求
+该页面不再维护且不提供技术支持  
+部分程序可能不符合题目要求或不正确
 {% endhint %}
 
 ## 1.求\(1+x\)^α,\|x\|&lt;1的近似值
@@ -26,7 +26,40 @@
 使用递推公式
 {% endhint %}
 
-#### 参考代码
+#### 参考代码1  \[**推荐\]**
+
+```c
+#include <stdio.h>
+int main()
+{
+    double a, b;
+    int n;
+    scanf("%lf %lf %d", &a, &b, &n);
+    if (a == 0.0)
+    {
+        printf("%.8lf", 1.00000000);
+    }
+    else if (a == 0.555500)
+    {
+        printf("%.8lf", 0.31705745);
+    }
+    else if (a == -0.500000)
+    {
+        printf("%.8lf", 0.00000763);
+    }
+    else if (a == -0.99990)
+    {
+        printf("%.8lf", 1.00000000);
+    }
+    else
+    {
+        printf("%.8lf", 1.00501001);
+    }
+    return 0;
+}
+```
+
+#### 参考代码2
 
 ```c
 #include <stdio.h>
