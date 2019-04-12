@@ -14,7 +14,7 @@ description: '代码全部使用已学知识编写(教学进度由隋凯鹏提�
 
 {% hint style="danger" %}
 **作业平台有查重功能,请勿全文复制,否则后果自负,**  
-关于查重系统,详细信息请点击这里
+关于查重系统,详细信息请点击[这里](https://null147.gitbook.io/c/mian-xiang-da-an-bian-cheng-jiao-cheng)
 {% endhint %}
 
 ## 1.大奖赛评分B
