@@ -68,20 +68,18 @@ int main()
     score_size = i - 1;
     score_min = 100;
     score_max = 0;
-    for (i = 0; i <= score_size; i++) //找出最大的数
+    for (i = 0; i <= score_size; i++)
     {
-        if (score[i] >= score_max)
+        if (score[i] >= score_max) //找出最大的数
         {
             score_max = score[i];
         }
-    }
-    for (i = 0; i <= score_size; i++) //找出最小的数
-    {
-        if (score[i] <= score_min)
+        if (score[i] <= score_min) //找出最小的数
         {
             score_min = score[i];
         }
     }
+
     for (i = 0; i <= score_size; i++) //求和
     {
         if (score[i] != score_max && score[i] != score_min) //如果不是最大的数且不是最小的数就相加
@@ -90,7 +88,7 @@ int main()
             score_effect += 1;
         }
     }
-    if (score_effect == 0)//如果所有的数都相等,平均值就是数组里的任意一个数
+    if (score_effect == 0)
     {
         average = score[0];
     }
@@ -101,6 +99,7 @@ int main()
     printf("%.2lf", average);
     return 0;
 }
+
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
