@@ -13,6 +13,20 @@ description: '代码全部使用已学知识编写(教学进度由隋凯鹏提�
 本文提供了平台的所有测试数据和期望输出,可以根据这些数据来调试程序
 {% endhint %}
 
+> Beautiful is better than ugly. 
+>
+> Explicit is better than implicit.
+>
+> Simple is better than complex.
+>
+> Complex is better than complicated.
+>
+> **Flat is better than nested.**
+>
+> Sparse is better than dense.
+>
+> **Readability counts.**
+
 ## 1.大奖赛评分B
 
 #### 【问题描述】
