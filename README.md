@@ -433,5 +433,221 @@ int main(void)
 略
 ```
 
+## 7.方阵乘法运算
+
+#### 【问题描述】 
+
+从键盘输入一个正整数n（n∈\[1,10\]），表示进行乘法运算的两个整形方阵的阶。然后分别输入两个整形方阵A和B，计算A×B后将结果输出到屏幕。
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x6D4B;&#x8BD5;&#x6570;&#x636E;</th>
+      <th style="text-align:left">&#x7B2C;&#x4E8C;&#x7EC4;</th>
+      <th style="text-align:left">&#x7B2C;&#x4E09;&#x7EC4;</th>
+      <th style="text-align:left">&#x671F;&#x671B;&#x8F93;&#x51FA;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">&#x6D4B;&#x8BD5;&#x6570;&#x636E;1</td>
+      <td style="text-align:left">99</td>
+      <td style="text-align:left">98</td>
+      <td style="text-align:left">9702</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x6D4B;&#x8BD5;&#x6570;&#x636E;2</td>
+      <td style="text-align:left">
+        <p>-10 20</p>
+        <p>0 -3</p>
+      </td>
+      <td style="text-align:left">
+        <p>10 1</p>
+        <p>1 21</p>
+      </td>
+      <td style="text-align:left">
+        <p>-80 410</p>
+        <p>-3 -63</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x6D4B;&#x8BD5;&#x6570;&#x636E;3</td>
+      <td style="text-align:left">
+        <p>1 1 1
+          <br />
+        </p>
+        <p>1 1 1
+          <br />
+        </p>
+        <p>1 1 1</p>
+      </td>
+      <td style="text-align:left">
+        <p>1 1 1
+          <br />
+        </p>
+        <p>1 1 1
+          <br />
+        </p>
+        <p>1 1 1</p>
+      </td>
+      <td style="text-align:left">
+        <p>3 3 3
+          <br />
+        </p>
+        <p>3 3 3
+          <br />
+        </p>
+        <p>3 3 3</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x6D4B;&#x8BD5;&#x6570;&#x636E;4</td>
+      <td style="text-align:left">
+        <p>1 1 1 0 0 0
+          <br />
+        </p>
+        <p>0 0 0 0 0 0
+          <br />
+        </p>
+        <p>1 1 1 1 1 1
+          <br />
+        </p>
+        <p>1 1 1 1 1 1
+          <br />
+        </p>
+        <p>1 1 1 1 1 1
+          <br />
+        </p>
+        <p>0 0 0 0 0 0</p>
+      </td>
+      <td style="text-align:left">
+        <p>1 1 1 1 1 1
+          <br />
+        </p>
+        <p>2 2 2 2 2 2
+          <br />
+        </p>
+        <p>3 3 3 3 3 3
+          <br />
+        </p>
+        <p>4 4 4 4 4 4
+          <br />
+        </p>
+        <p>5 5 5 5 5 5
+          <br />
+        </p>
+        <p>6 6 6 6 6 6</p>
+      </td>
+      <td style="text-align:left">
+        <p>6 6 6 6 6 6
+          <br />
+        </p>
+        <p>0 0 0 0 0 0
+          <br />
+        </p>
+        <p>21 21 21 21 21 21
+          <br />
+        </p>
+        <p>21 21 21 21 21 21
+          <br />
+        </p>
+        <p>21 21 21 21 21 21
+          <br />
+        </p>
+        <p>0 0 0 0 0 0</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x6D4B;&#x8BD5;&#x6570;&#x636E;5</td>
+      <td style="text-align:left">
+        <p>1 0 0 0
+          <br />
+        </p>
+        <p>0 1 0 0
+          <br />
+        </p>
+        <p>0 0 1 0
+          <br />
+        </p>
+        <p>0 0 0 1</p>
+      </td>
+      <td style="text-align:left">
+        <p>12 -45 -90 12
+          <br />
+        </p>
+        <p>1 2 3 123
+          <br />
+        </p>
+        <p>0 0 0 1
+          <br />
+        </p>
+        <p>1 1 1 1</p>
+      </td>
+      <td style="text-align:left">
+        <p>12 -45 -90 12
+          <br />
+        </p>
+        <p>1 2 3 123
+          <br />
+        </p>
+        <p>0 0 0 1
+          <br />
+        </p>
+        <p>1 1 1 1</p>
+      </td>
+    </tr>
+  </tbody>
+</table>#### 参考代码
+
+```c
+#include <stdio.h>
+int main()
+{
+    int mat1[11][11];
+    int mat2[11][11];
+    int mat_result[11][11];
+    int n = 0, i, j, k;
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j < n; j++)
+        {
+            scanf("%d", &mat1[i][j]);
+        }
+    }
+
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j < n; j++)
+        {
+            scanf("%d", &mat2[i][j]);
+        }
+    }
+    for (i = 0; i < n; ++i)
+    {
+        for (j = 0; j < n; ++j)
+        {
+            for (k = 0; k < n; ++k)
+            {
+                mat_result[i][j] += mat1[i][k] * mat2[k][j];
+            }
+        }
+    }
+
+    for (i = 0; i < n; ++i)
+    {
+        for (j = 0; j < n; ++j)
+        {
+            printf("%10d ", mat_result[i][j]);
+            if (j == n - 1)
+            {
+                printf("\n");
+            }
+        }
+    }
+    return 0;
+}
+```
+
 
 
