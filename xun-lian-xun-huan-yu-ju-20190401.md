@@ -1,12 +1,13 @@
 # 训练循环语句  2019-04-01
 
-{% hint style="info" %}
-您现在看到的不是完整版本,测试数据和做题思路将在稍后更新
-{% endhint %}
-
 {% hint style="danger" %}
 **作业平台有查重功能,请勿全文复制,否则后果自负,**  
 关于查重系统,详细信息请点击[这里](https://null147.gitbook.io/c/mian-xiang-da-an-bian-cheng-jiao-cheng)
+{% endhint %}
+
+{% hint style="info" %}
+该页面不再维护  
+部分程序可能不符合题目要求
 {% endhint %}
 
 ## 1.求\(1+x\)^α,\|x\|&lt;1的近似值
