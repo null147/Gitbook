@@ -13,6 +13,15 @@ description: '代码全部使用已学知识编写(教学进度由隋凯鹏提�
 本文提供了平台的所有测试数据和期望输出,可以根据这些数据来调试程序
 {% endhint %}
 
+{% hint style="success" %}
+程序看不懂?  
+上课听不懂?  
+自己不会写?  
+程序出现奇怪的问题?
+
+**点击**[**C语言教程**](https://null147.gitbook.io/c/c-yu-yan-jian-ming-jiao-cheng)**或者使用**[**C语言错误排除助手**](https://null147.gitbook.io/c/c-yu-yan-cuo-wu-pai-chu-zhu-shou)**解决问题**
+{% endhint %}
+
 ## 1.大奖赛评分B
 
 #### 【问题描述】

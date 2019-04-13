@@ -6,8 +6,17 @@
 {% endhint %}
 
 {% hint style="info" %}
-该页面不再维护且不提供技术支持  
+该页面不再维护  
 部分程序可能不符合题目要求或不正确
+{% endhint %}
+
+{% hint style="success" %}
+程序看不懂?  
+上课听不懂?  
+自己不会写?  
+程序出现奇怪的问题?
+
+**点击**[**C语言教程**](https://null147.gitbook.io/c/c-yu-yan-jian-ming-jiao-cheng)**或者使用**[**C语言错误排除助手**](https://null147.gitbook.io/c/c-yu-yan-cuo-wu-pai-chu-zhu-shou)**解决问题**
 {% endhint %}
 
 ## 1.求\(1+x\)^α,\|x\|&lt;1的近似值
