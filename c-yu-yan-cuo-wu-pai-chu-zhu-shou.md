@@ -1,10 +1,12 @@
 # C语言错误排除助手
 
-{% hint style="info" %}
-内部测试中,稍后上线
+{% hint style="danger" %}
+发生异常,该功能将会延迟上线
 {% endhint %}
 
-{% hint style="info" %}
-让我先写完数分再说
+{% hint style="danger" %}
+`0x00FF:`使用GitBook可能存在性能问题,导致加载速度过慢
 {% endhint %}
+
+
 
