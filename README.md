@@ -19,7 +19,7 @@ description: '代码全部使用已学知识编写,并尽量减少循环的嵌�
 自己不会写?  
 程序出现奇怪的问题?
 
-**点击**[**C语言教程**](https://null147.gitbook.io/c/c-yu-yan-jian-ming-jiao-cheng)**或者使用**[**C语言错误排除助手**](https://null147.gitbook.io/c/c-yu-yan-cuo-wu-pai-chu-zhu-shou)**解决问题**
+**点击**[**C语言教程**](https://null147.gitbook.io/c/c-yu-yan-jiao-cheng/c-yu-yan-jian-ming-jiao-cheng)**或者使用**[**C语言错误排除助手**](https://null147.gitbook.io/c/c-yu-yan-cuo-wu-pai-chu-zhu-shou)**解决问题**
 {% endhint %}
 
 ## 1.大奖赛评分B
