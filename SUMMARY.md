@@ -9,4 +9,6 @@
 
 * [C语言简明教程](c-yu-yan-jiao-cheng/c-yu-yan-jian-ming-jiao-cheng.md)
 * [1.1环境配置](c-yu-yan-jiao-cheng/1.1-huan-jing-pei-zhi.md)
+* [1.2建立一个工程](c-yu-yan-jiao-cheng/1.2-jian-li-yi-ge-gong-cheng.md)
+* [1.3调试你的程序](c-yu-yan-jiao-cheng/1.3-tiao-shi-ni-de-cheng-xu.md)
 
