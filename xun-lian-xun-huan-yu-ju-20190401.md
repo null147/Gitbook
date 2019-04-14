@@ -248,7 +248,7 @@ int main(){
     char x;
     scanf("%d",&a);
     getchar(); //消去数字和字符串间的多余空格
-    while(~scanf("%c",&x)){ //scanf()前加~可以判断文件输入结束
+    while(getchar()=='\n'){ //scanf()前加~可以判断文件输入结束
         printf("%c",x+a);
     }
     return 0;
