@@ -4,6 +4,12 @@ description: '这里提供了查重系统的原理,以及如何修改程序才�
 
 # 面向答案编程教程
 
+
+
+{% hint style="info" %}
+#### 查重系统毫无意义,因为这么短的代码无论如何写相似度都会很高
+{% endhint %}
+
 {% hint style="info" %}
 稍后更新
 {% endhint %}

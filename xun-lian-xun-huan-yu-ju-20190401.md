@@ -1,8 +1,12 @@
 # 训练循环语句  2019-04-01
 
-{% hint style="danger" %}
-**作业平台有查重功能,请勿全文复制,否则后果自负,**  
-关于查重系统,详细信息请点击[这里](https://null147.gitbook.io/c/mian-xiang-da-an-bian-cheng-jiao-cheng)
+{% hint style="info" %}
+查重系统毫无意义,因为这么短的代码无论如何写相似度都会很高
+
+~~\(所以说可以放心的抄代码了\)~~就当什么都没看见
+
+  
+****关于查重系统,详细信息请点击[这里](https://null147.gitbook.io/c/mian-xiang-da-an-bian-cheng-jiao-cheng)
 {% endhint %}
 
 {% hint style="info" %}
