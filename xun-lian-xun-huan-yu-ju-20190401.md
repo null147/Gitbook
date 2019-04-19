@@ -1,26 +1,13 @@
+---
+description: 该页面已过期
+---
+
 # 训练循环语句  2019-04-01
 
-{% hint style="info" %}
-查重系统毫无意义,因为这么短的代码无论如何写相似度都会很高
-
-~~\(所以说可以放心的抄代码了\)~~就当什么都没看见
-
-  
-****关于查重系统,详细信息请点击[这里](https://null147.gitbook.io/c/mian-xiang-da-an-bian-cheng-jiao-cheng)
-{% endhint %}
-
-{% hint style="info" %}
+{% hint style="danger" %}
+该页面已过期  
 该页面不再维护  
 部分程序可能不符合题目要求或不正确
-{% endhint %}
-
-{% hint style="success" %}
-程序看不懂?  
-上课听不懂?  
-自己不会写?  
-程序出现奇怪的问题?
-
-**点击**[**C语言教程**](https://null147.gitbook.io/c/c-yu-yan-jian-ming-jiao-cheng)**或者使用**[**C语言错误排除助手**](https://null147.gitbook.io/c/c-yu-yan-cuo-wu-pai-chu-zhu-shou)**解决问题**
 {% endhint %}
 
 ## 1.求\(1+x\)^α,\|x\|&lt;1的近似值
