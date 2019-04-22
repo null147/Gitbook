@@ -397,9 +397,29 @@ int main(void)
 
 #### 参考代码
 
-```text
-过于简单
-略
+```c
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int n = 0, i = 0;
+    double average = 0, sum = 0, fc_sum = 0;
+    scanf("%d", &n);
+    double *x = (double *)calloc(n, sizeof(double));
+    for (i = 0; i < n; i++)
+    {
+        scanf("%lf", x + i);
+        sum += x[i];
+    }
+    average = sum / (double)n;
+    for (i = 0; i < n; i++)
+    {
+        fc_sum += (pow((x[i] - average), 2));
+    }
+    printf("%lf %lf", average, fc_sum / (double)n);
+    return 0;
+}
 ```
 
 ## 6.~~折半~~查找
