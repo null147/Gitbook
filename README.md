@@ -434,9 +434,28 @@ int main(void)
 
 #### 参考代码
 
-```text
-过于简单
-略
+```c
+#include <stdio.h>
+int main()
+{
+    int a[15];
+    int num = 0, i = 0;
+    for (i = 0; i < 15; i++)
+    {
+        scanf("%d", a + i);
+    }
+    scanf("%d", &num);
+    for (i = 0; i < 15; i++)
+    {
+        if (num == a[i])
+        {
+            printf("%d", i);
+            return 0;
+        }
+    }
+    printf("not found");
+    return 0;
+}
 ```
 
 ## 7.方阵乘法运算
