@@ -4,16 +4,6 @@ description: '代码全部使用已学知识编写,并尽量减少循环的嵌�
 
 # 数组练习题 2019-04-08
 
- 本站总访问量次&lt;/span&gt;
-
-{% hint style="info" %}
-#### 查重系统毫无意义,因为这么短的代码无论如何写相似度都会很高
-
-~~\(所以说可以放心的抄代码了\)~~就当什么都没看见
-
-####  ****关于查重系统,详细信息请点击[这里](https://null147.gitbook.io/c/mian-xiang-da-an-bian-cheng-jiao-cheng)
-{% endhint %}
-
 {% hint style="info" %}
 本文提供了平台的所有测试数据和期望输出,可以根据这些数据来调试程序
 {% endhint %}
