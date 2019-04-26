@@ -304,8 +304,7 @@ int main()
 
 #### 主要思路2:
 
-杨辉三角 $$n+1$$ 行的每个元素等于第 $$n $$ 行对应两个元素\(在其上方\)的和  
-即`n[i][j] = n[i - 1][j - 1] + n[i - 1][j + 1]`
+已弃用
 {% endhint %}
 
 | 测试数据 | 值 | 期望输出 |
@@ -364,45 +363,7 @@ int main()
 
 {% tab title="参考程序2" %}
 ```c
-#include <stdio.h>
-int main(void)
-{
-    int n[13][13]; //定义一个数组存放杨辉三角
-    int i, j;
-    int max;
 
-    scanf("%d", &max);
-
-    for (i = 0; i < max; i++) //对数组的每个元素赋初值
-    {
-        for (j = 0; j <= 2 * max + 1; j++)
-        {
-            n[i][j] = 0;
-        }
-    }
-    n[0][max] = 1;
-    for (i = 1; i < max; i++) //计算每个元素的值
-    {
-        for (j = 1; j <= 2 * max; j++)
-        {
-            n[i][j] = n[i - 1][j - 1] + n[i - 1][j + 1];
-        }
-    }
-    for (i = 0; i < max; i++)
-    {
-        for (j = 0; j < 2 * max; j++)
-        {
-            if (n[i][j] != 0)
-            {
-                printf("%4d", n[i][j]); //打印
-            }
-            else
-            {
-                printf("    ");
-            }
-        }
-    }
-}
 ```
 {% endtab %}
 {% endtabs %}
