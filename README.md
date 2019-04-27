@@ -699,7 +699,9 @@ int main()
 
 ## 8.排好序的数组，插入数
 
-```cpp
-刘少瑞::神说:"最后一发子弹留给自己"
-```
+由于代码过长请自行下载
+
+{% file src=".gitbook/assets/pai-xu-hao-de-shu-zu-cha-ru-shu.c" %}
+
+
 
