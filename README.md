@@ -699,7 +699,24 @@ int main()
 
 ## 8.排好序的数组，插入数
 
-由于代码过长请自行下载
+#### 参考代码
+
+```python
+size = int(input())
+array = input()
+num = int(input())
+List = []
+for l in array:
+    if l != ' ':
+        List.append(int(l))
+
+List.append(num)
+List.sort()
+print(List)
+for i in List:
+    print(str(i) + ' ', end='')
+
+```
 
 {% file src=".gitbook/assets/pai-xu-hao-de-shu-zu-cha-ru-shu.c" %}
 
