@@ -5,6 +5,7 @@
 * [面向答案编程教程](mian-xiang-da-an-bian-cheng-jiao-cheng.md)
 * [C语言程序错误排除助手](c-yu-yan-cuo-wu-pai-chu-zhu-shou.md)
 * [算法](suan-fa.md)
+* [函数题 2019-04-29](han-shu-ti-20190429.md)
 
 ## C语言教程
 
