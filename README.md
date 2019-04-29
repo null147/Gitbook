@@ -701,6 +701,8 @@ int main()
 
 #### 参考代码
 
+{% code-tabs %}
+{% code-tabs-item title="1.py" %}
 ```python
 size = int(input())
 array = input()
@@ -717,6 +719,8 @@ for i in List:
     print(str(i) + ' ', end='')
 
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 {% file src=".gitbook/assets/pai-xu-hao-de-shu-zu-cha-ru-shu.c" %}
 
