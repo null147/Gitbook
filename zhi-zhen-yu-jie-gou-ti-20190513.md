@@ -4,6 +4,14 @@ description: '2019-05-13 17:27:00 至 2019-05-28 17:25:00'
 
 # 指针与结构体 2019-05-13
 
+{% hint style="info" %}
+该页面未更新完毕,你所看到的不是最终版本
+{% endhint %}
+
+{% hint style="info" %}
+**你觉得这个网站有什么值得改进的地方?**[**点击这里**](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__tGLjjZUNVhQS1VOVFdGQjA0VkROSUVaNFZTSVVNRS4u)**!**
+{% endhint %}
+
 ## 1.结构体学生
 
 <table>
@@ -137,8 +145,8 @@ int main()
 | 测试数据2 | 10 2 5 6 9 41 -21 3 9 8 | 72 |
 | 测试数据3 | 8 7 4 62 35 41 52 86 71 41 | 407 |
 
-#### 参考代码
-
+{% tabs %}
+{% tab title="参考代码-用指针" %}
 ```c
 #include <stdio.h>
 int main()
@@ -147,6 +155,31 @@ int main()
     for (i = 0; i < 10; i++)
     {
         scanf("%d", arr + i);//读入数组(用指针)
+    }
+    for ( i = 0; i < 10; i++)
+    {
+        static int sum = 0;
+        sum += *(arr + i);//求和(用指针)
+        if (i==9)
+        {
+            printf("%d", sum);//求和完毕就打印结果,然后结束程序
+            return 0;
+        } 
+    }
+    return 0;
+}
+```
+{% endtab %}
+
+{% tab title="参考代码-不用指针" %}
+```c
+#include <stdio.h>
+int main()
+{
+    int arr[10], i = 0;
+    for (i = 0; i < 10; i++)
+    {
+        scanf("%d", arr[i]);//读入数组
     }
     for ( i = 0; i < 10; i++)
     {
@@ -161,6 +194,8 @@ int main()
     return 0;
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ## 3.动态分配内存
 
@@ -171,8 +206,8 @@ int main()
 | 测试数据3 | 6 | 78 0 0 0 0 0 | 71.466667   511.362222 |
 | 测试数据4 | 4 | -40 -60 -80 -90 | -67.500000   368.750000 |
 
-#### 参考代码
-
+{% tabs %}
+{% tab title="参考代码-最简方法" %}
 ```c
 #include<stdio.h>
 int main()
@@ -198,8 +233,43 @@ int main()
     return 0;
 }
 ```
+{% endtab %}
+
+{% tab title="参考代码-动态分配内存" %}
+```c
+#include<stdio.h>
+#include<stdlib.h>//calloc函数在stdlib.h中
+int main()
+{
+    int n = 0, i = 0, sum = 0;
+    double sum_fc=0;
+    int *arr = (int *)calloc(n, sizeof(int));//calloc函数可以动态申请内存空间,返回个指向数组首地址的指针
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    for ( i = 0; i < n; i++)
+    {
+        sum += arr[i];
+    }
+    double avg=(double)sum/(double)n;
+    for ( i = 0; i < n; i++)
+    {
+        sum_fc += (arr[i] - avg) * (arr[i] - avg);
+    }
+    printf("%12.6lf %12.6lf", avg, sum_fc / n);
+    return 0;
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## 4.指针判断年月日
+
+{% hint style="info" %}
+神说:战士的最后一发子弹当留给自己
+{% endhint %}
 
 ```text
 刘少瑞.神说:战士的最后一发子弹当留给自己
