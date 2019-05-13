@@ -127,10 +127,81 @@ int main()
     printf("%d %s %d %d %d %d", stu[index].id, stu[index].name, stu[index].class1, stu[index].class2, stu[index].class3, (int)average[index]);
     return 0;
 }
-​
 ```
 
 ## 2.指针与数组
 
+| 测试数据 | 值 | 期望输出 |
+| :--- | :--- | :--- |
+| 测试数据1 | -1 -2 -3 -4 -5 -6 -7 -8 -9 0 | -45 |
+| 测试数据2 | 10 2 5 6 9 41 -21 3 9 8 | 72 |
+| 测试数据3 | 8 7 4 62 35 41 52 86 71 41 | 407 |
 
+#### 参考代码
+
+```c
+#include <stdio.h>
+int main()
+{
+    int arr[10], i = 0;
+    for (i = 0; i < 10; i++)
+    {
+        scanf("%d", arr + i);//读入数组(用指针)
+    }
+    for ( i = 0; i < 10; i++)
+    {
+        static int sum = 0;
+        sum += arr[i];//求和
+        if (i==9)
+        {
+            printf("%d", sum);//求和完毕就打印结果,然后结束程序
+            return 0;
+        } 
+    }
+    return 0;
+}
+```
+
+## 3.动态分配内存
+
+| 测试数据 | 第一组 | 第二组 | 期望输出 |
+| :--- | :--- | :--- | :--- |
+| 测试数据1 | 4 | 65 98 78 82 | 80.750000 138.687500 |
+| 测试数据2 | 6 | 78 86 62 42 51 35 | 59.000000   338.000000 |
+| 测试数据3 | 6 | 78 0 0 0 0 0 | 71.466667   511.362222 |
+| 测试数据4 | 4 | -40 -60 -80 -90 | -67.500000   368.750000 |
+
+#### 参考代码
+
+```c
+#include<stdio.h>
+int main()
+{
+    int n = 0, i = 0, sum = 0;
+    double sum_fc=0;
+    int arr[100];
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    for ( i = 0; i < n; i++)
+    {
+        sum += arr[i];
+    }
+    double avg=(double)sum/(double)n;
+    for ( i = 0; i < n; i++)
+    {
+        sum_fc += (arr[i] - avg) * (arr[i] - avg);
+    }
+    printf("%12.6lf %12.6lf", avg, sum_fc / n);
+    return 0;
+}
+```
+
+## 4.指针判断年月日
+
+```text
+刘少瑞.神说:战士的最后一发子弹当留给自己
+```
 
